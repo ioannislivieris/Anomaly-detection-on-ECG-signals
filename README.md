@@ -23,10 +23,17 @@ The network is jointly trained on 2 loss functions:
 Repo works with:
 
 python>=3.7
+
 tqdm==4.62.3
+
 matplotlib==3.5.1
+
 numpy==1.21.2
+
 torch==1.7.0
+
 pandas==1.3.5
+
 scikit-learn==1.0.2
+
 seaborn==0.11.2
