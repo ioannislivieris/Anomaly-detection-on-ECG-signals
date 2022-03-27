@@ -1,10 +1,23 @@
 # Anomaly-detection-on-ECG-signals
 
-This project classifies ECG signals as NORMAL, WARNING and CRITICAL (i.e. Abnormal) based on a semi-supervised approach. A Variational AutoEncoder (VAE) is developed and training on NORMAL ECG signals. Then the rest 
+This project classifies ECG signals as NORMAL, WARNING and CRITICAL (i.e. Abnormal) based on a semi-supervised approach. A Variational AutoEncoder (VAE) is developed and training on NORMAL ECG signals. Then, its is applied on unseen ECG signals. 
+
+Additionally, a detailed analysis on the latent space is included.
+
+## Get Started
+
+1. Install Python >= 3.7
+2. Install requirements.txt
+3. Run main.ipynb
 
 
-Additionally, a detailed analysis on the latent space is included
+## Data
 
+The above network is trained on a dataset of 8500 ECG's and tested on 950 ECG's Named ECG5000 on the UCR archive, this dataset has 5 classes, and the labels are used to generate different colors on PCA, tSNE chart.
+
+Here's a snapshot of the data: 
+
+<img src='./images/data_examples.png' >
 
 
 ## Loss function
@@ -16,26 +29,18 @@ The network is jointly trained on 2 loss functions:
 
 <img src='./images/math.png' >
 
-## Data
-
-The above network is trained on a dataset of 8500 ECG's and tested on 950 ECG's Named ECG5000 on the UCR archive, this dataset has 5 classes, and the labels are used to generate different colors on PCA, tSNE chart.
-
-Here's a snapshot of the data: 
-
-<img src='./images/data_examples.png' >
-
-
-
 ## Requirements
 
 Repo works with:
 
-python>=3.7
+- python>=3.7
 
-tqdm==4.62.3
-matplotlib==3.5.1
-numpy==1.21.2
-torch==1.7.0
-pandas==1.3.5
-scikit-learn==1.0.2
-seaborn==0.11.2
+and
+
+- tqdm==4.62.3
+- matplotlib==3.5.1
+- numpy==1.21.2
+- torch==1.7.0
+- pandas==1.3.5
+- scikit-learn==1.0.2
+- seaborn==0.11.2
